@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEART ATTACK PREDICTION!</title>
+</head>
+
+<body>
+    <body bgcolor="aqua">
+       
+    
+         
+     
+    
+        <div class="ml-container" align="center">
+
+    <div class="container">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2 class='container-heading'><span class="heading_font">HEART ATTACK Prediction</span>
+                
+            </h2>
+            
+        <br>
+
+        <!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1><span class='danger'>Oops! <br><br>You have High Chances of Heart Attack!.</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='heart_attack.gif')}}" alt="Cancer Image">
+			{% elif prediction==0 %}
+				<h1><span class='safe'>Congratulation!<br><br>You have low Chances of Heart Attack!.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='chill.gif')}}" alt="Not Cancer Image">
+			{% endif %}
+		</div>
+        </form>
+
+    </div>
+    <div>
+            <br><br>
+
+            <p class='footer-description'>©2021 Mysar Ahmad Bhat</p>
+
+    </div>
+</div>
+
+
+
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+</body>

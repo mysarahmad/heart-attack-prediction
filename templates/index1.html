@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HEART ATTACK PREDICTION:</title>
+   
+
+</head>
+
+<body bgcolor="aqua">
+    <div class="input-box" align="center">
+        <h2 class='container-heading'><span class="heading_font">HEART ATTACK Prediction</span>
+          
+    </div>
+
+     
+ 
+
+    <div class="ml-container" align="center">
+
+
+        <form action="{{ url_for('predict') }}" method="POST">
+
+            <h3>chest_pain_type</h3>
+            <input id="third" name="chest_pain_type" placeholder="Range Between  0-4" required="required">
+            <br>
+            
+            <h3>Exercise_Include_Angina</h3>
+            <input id="third" name="Exercise_Include_Angina" placeholder="0 or 1" required="required">
+            <br>
+            <br>
+            <br>
+            <h3>oldpeak</h3>
+            <input id="fifth" name="oldpeak" placeholder="Range Between  0.0 to 6.2" required="required">
+            <br>
+            
+            <br>
+            <h3>caa</h3>
+            <input id="fifth" name="caa" placeholder="Range Between  0-4" required="required">
+            <br>
+            <br>
+            <h3>thall</h3>
+            <input id="fifth" name="thall" placeholder="Range Between  0-3" required="required">
+            <br>
+            <br>
+            <br>
+            <button id="sub" type="submit ">Submit</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class='footer-description'>© Mysar Ahmad Bhat</p>
+
+        </form>
+    </div>
+
+
+
+    
+
+
+</html>
